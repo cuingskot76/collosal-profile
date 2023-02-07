@@ -25,7 +25,7 @@ const Navbar = () => {
   });
 
   return (
-    <div className="navbar flex px-[1rem] py-2 justify-between">
+    <div className="navbar flex items-center justify-between py-2 px-[1rem] sm:px-[2rem] sm:py-5 md:px-[3.5rem] lg:px-[7rem] xl:px-[14rem] 2xl:px-[17rem]">
       <div className="flex items-center gap-3">
         <svg
           width="24"
@@ -51,19 +51,21 @@ const Navbar = () => {
         </svg>
         <h1 className="text-2xl">Collosal.</h1>
       </div>
-      <div className="hidden">
-        <ul className="flex">
+      <div className="hidden sm:block ">
+        <ul className="flex gap-3 md:gap-7 lg:gap-12 xl:gap-14">
           <li className="navbar-links">Services</li>
           <li className="navbar-links">How We Work</li>
           <li className="navbar-links">Projects</li>
           <li className="navbar-links">About</li>
         </ul>
       </div>
-      <button className="hidden navbar-links">Contact</button>
+      <button className="hidden sm:block navbar-links button px-5 py-2 rounded-sm md:px-7 md:py-3 md:rounded-md">
+        Contact
+      </button>
 
       {/* hamburger menu */}
       <svg
-        className="ham hamRotate ham8"
+        className="ham hamRotate ham8 sm:hidden"
         viewBox="0 0 100 100"
         width="50"
         onClick={handleClickHamburger}

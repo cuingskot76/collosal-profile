@@ -9,12 +9,34 @@ html {
   color: #fff;
 }
 
+.button {
+  background-color: rgba(255, 255, 255, 10%);
+}
+
+.button-color {
+  background-color: #6016fc;
+}
+
+.subTitle {
+  color: #16fcd2;
+  font-weight: 400;
+}
+
+.bg-light {
+  background-color: rgba(255, 255, 255, 5%);
+}
+
+.muted {
+  color: rgba(255, 255, 255, 60%);
+}
+
 .navbar {
   font-family: "DM Sans", sans-serif;
 }
 
 .navbar-scoll {
   background-color: rgba(255, 255, 255, 5%);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 10%);
 }
 
