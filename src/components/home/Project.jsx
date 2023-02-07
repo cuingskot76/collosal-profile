@@ -10,13 +10,13 @@ const Project = () => {
           <h1 className="font-bold pt-3 pb-6 text-2xl md:text-3xl text-center">
             {item.title}
           </h1>
-          <div className="flex flex-wrap justify-center">
+          <div className="flex md:flex-row flex-col items-center justify-center gap-5">
             {item.details?.map((detail, index) => (
               <div
                 key={detail}
-                className="flex flex-col mb-5 bg-light md:w-[320px] rounded-sm px-5 py-4"
+                className="flex text-center flex-col mb-5 bg-light rounded-sm px-3 pt-5 pb-10"
               >
-                <div className="w-[300px] bg-cover object-cover">
+                <div className="max-w-[300px] bg-cover object-cover">
                   <img
                     src={detail.url}
                     alt={detail.title}
@@ -25,8 +25,10 @@ const Project = () => {
                 </div>
                 <div className="mt-10">
                   <p className="font-bold">{detail.title}</p>
-                  <p className="muted">{detail.description}</p>
-                  <button>Detail</button>
+                  <p className="muted mb-8 mt-2">{detail.description}</p>
+                  <button className="py-2 px-7 border bottom-1 rounded-full">
+                    Detail
+                  </button>
                 </div>
               </div>
             ))}

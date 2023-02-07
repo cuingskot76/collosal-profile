@@ -76,3 +76,27 @@ export const project = [
     ],
   },
 ];
+
+export const testimonials = [
+  {
+    username: "Esther Howard",
+    working: "Biffco Enterprises Ltd.",
+    img: "../../testimonials/christian.webp",
+    description:
+      "Very easy to use. I made back the purchase price in just 48 hours! It's great. It's is both attractive and highly adaptable.",
+  },
+  {
+    username: "Angella Duncan",
+    working: "Abstergo Ltd.",
+    img: "../../testimonials/angela.webp",
+    description:
+      "Your company is truly upstanding and is behind its product 100%. It's the perfect solution for our business. It has really helped our business.",
+  },
+  {
+    username: "Ronald Richards",
+    working: "Barone LLC.",
+    img: "../../testimonials/vince.webp",
+    description:
+      "I am really satisfied with it. I'm good to go. It really saves me time and effort. It's is exactly what our business has been lacking. ",
+  },
+];

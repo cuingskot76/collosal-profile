@@ -32,6 +32,7 @@ html {
 
 .navbar {
   font-family: "DM Sans", sans-serif;
+  z-index: 99;
 }
 
 .navbar-scoll {
