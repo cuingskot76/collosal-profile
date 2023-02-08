@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const Navbar = () => {
   const [hamburgerActive, setHamburgerActive] = useState(false);
+
   const handleClickHamburger = () => {
     setHamburgerActive(!hamburgerActive);
     if (hamburgerActive) {

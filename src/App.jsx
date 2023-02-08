@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         <Pricing />
         <Testimonials />
         <Callout />
-        {/* <Footer /> */}
+        <Footer />
         <Outlet />
       </div>
     ),
