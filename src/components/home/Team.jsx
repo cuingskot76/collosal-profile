@@ -3,9 +3,9 @@ import { team } from "../../constant";
 
 const Team = () => {
   return (
-    <div className="mt-10 sm:mt-20 py-2 px-[1rem] sm:px-[2rem] sm:py-5 md:px-[3.5rem] lg:px-[7rem] xl:px-[14rem] 2xl:px-[17rem]">
+    <div className="relative mt-10 sm:mt-20 py-2 px-[1rem] sm:px-[2rem] sm:py-5 md:px-[3.5rem] lg:px-[7rem] xl:px-[14rem] 2xl:px-[17rem]">
       {team?.map((item, index) => (
-        <div className="md:flex md:flex-row md:items-center md:justify-center md:gap-3 lg:gap-5">
+        <div className="md:flex md:flex-row md:items-center md:justify-center md:gap-3 lg:gap-5 xl:gap-52">
           <div className="md:flex flex-col flex-1">
             <h3 className="subTitle">{item.subTitle}</h3>
             <h1 className="font-bold text-2xl md:text-3xl mt-1 mb-7">
@@ -18,6 +18,10 @@ const Team = () => {
           </div>
         </div>
       ))}
+      {/* gradient start */}
+      <div className="absolute z-[-1] w-[40%] h-[20%] bottom-0 left-[50%] orange-gradient" />
+      <div className="absolute z-[-2] w-[10%] h-[30%] blue-gradient top-0 right-[20%]" />
+      {/* gradient end */}
     </div>
   );
 };

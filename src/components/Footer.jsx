@@ -2,12 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer
-      aria-label="Site Footer"
-      className="mt-10 sm:mt-20 bg-white dark:bg-gray-900"
-    >
+    <footer aria-label="Site Footer" className="relative mt-10 sm:mt-20">
       <div className="mx-auto max-w-screen-xl px-4 pt-16 pb-6 sm:px-6 lg:px-8 lg:pt-24">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div className="border-t border-gray-100 pt-10 dark:border-gray-800 grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <div className="flex justify-center sm:justify-start">
               <div className="flex items-center gap-3">

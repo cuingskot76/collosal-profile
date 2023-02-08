@@ -15,7 +15,8 @@ const Navbar = () => {
   //   when scroll down, navbar should be sticky
   window.addEventListener("scroll", () => {
     const navbar = document.querySelector(".navbar");
-    navbar.classList.toggle("sticky", window.scrollY > 50);
+    navbar.classList.toggle("sticky", window.scrollY > 150);
+
     if (navbar.classList.contains("sticky")) {
       navbar.classList.add("top-0");
       navbar.classList.add("navbar-scoll");

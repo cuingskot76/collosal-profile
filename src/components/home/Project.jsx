@@ -3,7 +3,7 @@ import { project } from "../../constant";
 
 const Project = () => {
   return (
-    <div className="mt-10 sm:mt-20 lg:mt-28 max-w-2xl py-2 px-[1rem] m-auto flex flex-col justify-center items-center">
+    <div className="relative mt-10 sm:mt-20 lg:mt-28 max-w-2xl py-2 px-[1rem] m-auto flex flex-col justify-center items-center">
       {project?.map((item, index) => (
         <div key={item}>
           <h3 className="subTitle text-center">{item.subTitle}</h3>
@@ -35,6 +35,11 @@ const Project = () => {
           </div>
         </div>
       ))}
+      {/* gradient start */}
+      <div className="absolute z-[-1] w-[10%] h-[10%] rounded-full top-[0] -right-[20%] green-ball-gradient" />
+      <div className="absolute z-[-2] w-[7%] h-[7%] rounded-full -top-[10%] -left-[30%] red-ball-gradient" />
+      <div className="absolute z-[-1] w-[5%] h-[5%] rounded-full top-[30%] -right-[50%] blue-ball-gradient" />
+      {/* gradient end */}
     </div>
   );
 };

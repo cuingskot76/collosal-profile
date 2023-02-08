@@ -48,6 +48,46 @@ html {
   color: rgba(255, 255, 255, 80%);
 }
 
+.orange-gradient {
+  background: linear-gradient(180deg, rgb(252, 160, 22, 0) 0%, #fca016 100%);
+  filter: blur(300px);
+}
+
+.green-gradient {
+  background: linear-gradient(180deg, rgb(22, 252, 210, 0) 0%, #16fcd2 100%);
+  filter: blur(200px);
+}
+
+.green-2-gradient {
+  background: linear-gradient(180deg, rgb(102, 255, 163, 0) 0%, #214d76 100%);
+  filter: blur(100px);
+}
+
+.green-ball-gradient {
+  background: linear-gradient(180deg, #16fcd2 20%, #16fcd2 100%);
+  filter: blur(10px);
+}
+
+.red-gradient {
+  background: linear-gradient(180deg, rgb(252, 22, 91, 0) 0%, #fc165b 100%);
+  filter: blur(300px);
+}
+
+.red-ball-gradient {
+  background: linear-gradient(180deg, #fd497f 20%, #fc165b 100%);
+  filter: blur(10px);
+}
+
+.blue-gradient {
+  background: linear-gradient(180deg, rgb(96, 22, 252, 0) 0%, #6016fc 100%);
+  filter: blur(150px);
+}
+
+.blue-ball-gradient {
+  background: linear-gradient(180deg, #6016fc 20%, #6016fc 100%);
+  filter: blur(10px);
+}
+
 /* hamburger  */
 .ham {
   cursor: pointer;
