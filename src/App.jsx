@@ -10,6 +10,10 @@ import Team from "./components/home/Team";
 import Testimonials from "./components/home/Testimonials";
 import Work from "./components/home/Work";
 import Navbar from "./components/Navbar";
+import Design from "./components/services/Design";
+import Development from "./components/services/Development";
+import HeroServices from "./components/services/HeroServices";
+import Maintenance from "./components/services/Maintenance";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +32,20 @@ const router = createBrowserRouter([
         <Callout />
         <Footer />
         <Outlet />
+      </div>
+    ),
+  },
+  {
+    path: "/services",
+    element: (
+      <div>
+        <Navbar />
+        <HeroServices />
+        <Design />
+        <Development />
+        <Maintenance />
+        <Callout />
+        <Footer />
       </div>
     ),
   },

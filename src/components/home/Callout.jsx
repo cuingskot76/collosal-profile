@@ -6,7 +6,7 @@ const Callout = () => {
       <p className="font-bold text-2xl text-center md:text-3xl md:max-w-md">
         We've prepared everything, it's time for you to tell the problem
       </p>
-      <div className="gap-5 flex md:gap-6 items-center justify-center mt-5 sm:mt-0">
+      <div className="gap-5 flex md:gap-6 items-center justify-center mt-5 md:mt-0">
         <button className="button-color py-3 px-5">Send Quote</button>
         <button className="button py-3 px-5">Ask Us</button>
       </div>

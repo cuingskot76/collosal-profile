@@ -1,3 +1,4 @@
+// home
 export const features = [
   {
     title: "Design",
@@ -42,7 +43,7 @@ export const work = [
     title:
       "Everything is well planned, well designed and developed wholeheartedly",
     subTitle: "HOW WE WORK?",
-    url: "../../main/work-2.png",
+    url: "../../main/work.png",
     description:
       "Careful planning makes us confident, developed with best practices so that the project can be maintained. We always test projects before they are shipped.",
   },
@@ -52,7 +53,7 @@ export const team = [
   {
     title: "We're a team of designers, engineers and analysts",
     subTitle: "OUR TEAM",
-    url: "../../main/team-2.png",
+    url: "../../main/team.png",
     description:
       "Our team consists of many creative people. We are committed to maintaining quality work as well as speed. These creative people work together to create maximum work results.",
   },
@@ -98,5 +99,42 @@ export const testimonials = [
     img: "../../testimonials/vince.webp",
     description:
       "I am really satisfied with it. I'm good to go. It really saves me time and effort. It's is exactly what our business has been lacking. ",
+  },
+];
+
+// services
+export const design = [
+  {
+    title: "UI DESIGN",
+    subTitle:
+      "Don't let your idea get caught by others, design a prototype for your idea",
+    url: "../../main/design__services.png",
+    description:
+      "Delegate your ideas as quickly as possible, create beautiful designs and vivid prototypes.",
+  },
+];
+
+export const development = [
+  {
+    title: "DEVELOPMENT",
+    subTitle:
+      "Create solutions to repetitive problems, design applications and access anywhere!",
+    url: "../../main/development__services.png",
+    description:
+      "Just tell us your repetitive problem or the primitive method used today, and we will create a digital solution.",
+    compatible: [
+      {
+        title: "Mobile App Development",
+        url: "../../logo/phone__dev.png",
+      },
+      {
+        title: "Desktop App Development",
+        url: "../../logo/desktop__dev.png",
+      },
+      {
+        title: "Web Development",
+        url: "../../logo/web__dev.png",
+      },
+    ],
   },
 ];

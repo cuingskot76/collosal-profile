@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [hamburgerActive, setHamburgerActive] = useState(false);
@@ -28,7 +29,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar flex items-center justify-between py-2 px-[1rem] sm:px-[2rem] sm:py-5 md:px-[3.5rem] lg:px-[7rem] xl:px-[14rem] 2xl:px-[17rem]">
-      <div className="flex items-center gap-3">
+      <Link to="/" className="flex items-center gap-3">
         <svg
           width="24"
           height="24"
@@ -52,18 +53,29 @@ const Navbar = () => {
           />
         </svg>
         <h1 className="text-2xl">Collosal.</h1>
-      </div>
+      </Link>
       <div className="hidden sm:block ">
         <ul className="flex gap-3 md:gap-7 lg:gap-12 xl:gap-14">
-          <li className="navbar-links">Services</li>
-          <li className="navbar-links">How We Work</li>
-          <li className="navbar-links">Projects</li>
-          <li className="navbar-links">About</li>
+          <Link to="/services" className="navbar-links">
+            Services
+          </Link>
+          <Link to="/work" className="navbar-links">
+            How We Work
+          </Link>
+          <Link to="/projects" className="navbar-links">
+            Projects
+          </Link>
+          <Link to="/about" className="navbar-links">
+            About
+          </Link>
         </ul>
       </div>
-      <button className="hidden sm:block navbar-links button px-5 py-2 rounded-sm md:px-7 md:py-3 md:rounded-md">
+      <Link
+        to="/contact"
+        className="hidden sm:block navbar-links button px-5 py-2 rounded-sm md:px-7 md:py-3 md:rounded-md"
+      >
         Contact
-      </button>
+      </Link>
 
       {/* hamburger menu */}
       <svg

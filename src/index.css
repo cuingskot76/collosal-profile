@@ -13,6 +13,13 @@ html {
   background-color: rgba(255, 255, 255, 10%);
 }
 
+.border_ {
+  border-bottom: 1px solid rgba(255, 255, 255, 10%);
+}
+.border__ {
+  border: 1px solid rgba(255, 255, 255, 10%);
+}
+
 .button-color {
   background-color: #6016fc;
 }
