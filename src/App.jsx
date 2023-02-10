@@ -14,6 +14,7 @@ import Design from "./components/services/Design";
 import Development from "./components/services/Development";
 import HeroServices from "./components/services/HeroServices";
 import Maintenance from "./components/services/Maintenance";
+import ServiceDetail from "./components/services/ServiceDetail";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,17 @@ const router = createBrowserRouter([
         <Design />
         <Development />
         <Maintenance />
+        <Callout />
+        <Footer />
+      </div>
+    ),
+  },
+  {
+    path: "/service-detail",
+    element: (
+      <div>
+        <Navbar />
+        <ServiceDetail />
         <Callout />
         <Footer />
       </div>

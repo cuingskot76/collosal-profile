@@ -59,10 +59,16 @@ html {
   background: linear-gradient(180deg, rgb(252, 160, 22, 0) 0%, #fca016 100%);
   filter: blur(300px);
 }
+.orange-gradient__2 {
+  background: linear-gradient(180deg, rgb(252, 160, 22, 0) 0%, #fca016 100%);
+}
 
 .green-gradient {
   background: linear-gradient(180deg, rgb(22, 252, 210, 0) 0%, #16fcd2 100%);
   filter: blur(200px);
+}
+.green-gradient__2 {
+  background: linear-gradient(180deg, rgb(22, 252, 210, 0) 0%, #16fcd2 100%);
 }
 
 .green-2-gradient {
@@ -79,6 +85,9 @@ html {
   background: linear-gradient(180deg, rgb(252, 22, 91, 0) 0%, #fc165b 100%);
   filter: blur(300px);
 }
+.red-gradient__2 {
+  background: linear-gradient(180deg, rgb(252, 22, 91, 0) 0%, #fc165b 100%);
+}
 
 .red-ball-gradient {
   background: linear-gradient(180deg, #fd497f 20%, #fc165b 100%);
@@ -88,6 +97,9 @@ html {
 .blue-gradient {
   background: linear-gradient(180deg, rgb(96, 22, 252, 0) 0%, #6016fc 100%);
   filter: blur(150px);
+}
+.blue-gradient__2 {
+  background: linear-gradient(180deg, rgb(96, 22, 252, 0) 0%, #6016fc 100%);
 }
 
 .blue-ball-gradient {

@@ -122,19 +122,16 @@ export const development = [
     url: "../../main/development__services.png",
     description:
       "Just tell us your repetitive problem or the primitive method used today, and we will create a digital solution.",
-    compatible: [
-      {
-        title: "Mobile App Development",
-        url: "../../logo/phone__dev.png",
-      },
-      {
-        title: "Desktop App Development",
-        url: "../../logo/desktop__dev.png",
-      },
-      {
-        title: "Web Development",
-        url: "../../logo/web__dev.png",
-      },
-    ],
+  },
+];
+
+export const maintenance = [
+  {
+    title: "MAINTENANCE",
+    subTitle:
+      "Think of your server as your own child, taking care of it every day",
+    url: "../../main/maintenance__services.png",
+    description:
+      "We will back up your servers every day, clean them every week, upgrade them when there is an update.",
   },
 ];
