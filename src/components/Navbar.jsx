@@ -5,27 +5,27 @@ const Navbar = () => {
   const [hamburgerActive, setHamburgerActive] = useState(false);
   const [sticky, setSticky] = useState("");
 
-  const handleClickHamburger = () => {
-    setHamburgerActive(!hamburgerActive);
-    if (hamburgerActive) {
-      document.querySelector(".ham").classList.remove("active");
-    } else {
-      document.querySelector(".ham").classList.add("active");
-    }
-  };
+  // const handleClickHamburger = () => {
+  //   setHamburgerActive(!hamburgerActive);
+  //   if (hamburgerActive) {
+  //     document.querySelector(".ham").classList.remove("active");
+  //   } else {
+  //     document.querySelector(".ham").classList.add("active");
+  //   }
+  // };
 
-  useEffect(() => {
-    const stickyNav = () => {
-      let windowScroll = window.scrollY;
-      windowScroll > 0
-        ? setSticky("sticky top-0 navbar-scroll")
-        : setSticky("");
-    };
-    window.addEventListener("scroll", stickyNav);
-    return () => {
-      window.removeEventListener("scroll", stickyNav);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const stickyNav = () => {
+  //     let windowScroll = window.scrollY;
+  //     windowScroll > 0
+  //       ? setSticky("sticky top-0 navbar-scroll")
+  //       : setSticky("");
+  //   };
+  //   window.addEventListener("scroll", stickyNav);
+  //   return () => {
+  //     window.removeEventListener("scroll", stickyNav);
+  //   };
+  // }, []);
 
   return (
     <div
