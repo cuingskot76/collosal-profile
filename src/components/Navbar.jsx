@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [hamburgerActive, setHamburgerActive] = useState(false);
+  const [sticky, setSticky] = useState("");
 
   const handleClickHamburger = () => {
     setHamburgerActive(!hamburgerActive);
@@ -13,45 +14,23 @@ const Navbar = () => {
     }
   };
 
-  //   when scroll down, navbar should be sticky
-  // window.addEventListener("scroll", () => {
-  //   const navbar = document.querySelector(".navbar");
-  //   navbar.classList.toggle("sticky", window.scrollY > 0);
-
-  //   if (navbar.classList.contains("sticky")) {
-  //     navbar.classList.add("top-0");
-  //     navbar.classList.add("navbar-scoll");
-  //   } else {
-  //     navbar.classList.remove("top-0");
-  //     navbar.classList.remove("navbar-scoll");
-  //   }
-  // });
-
-  // convert windows scroll into useeffect
   useEffect(() => {
     const stickyNav = () => {
-      window.addEventListener("scroll", () => {
-        const navbar = document.querySelector(".navbar");
-        navbar.classList.toggle("sticky", window.scrollY > 0);
-
-        if (navbar.classList.contains("sticky")) {
-          navbar.classList.add("top-0");
-          navbar.classList.add("navbar-scoll");
-        } else {
-          navbar.classList.remove("top-0");
-          navbar.classList.remove("navbar-scoll");
-        }
-      });
+      let windowScroll = window.scrollY;
+      windowScroll > 0
+        ? setSticky("sticky top-0 navbar-scroll")
+        : setSticky("");
     };
-    stickyNav();
-
+    window.addEventListener("scroll", stickyNav);
     return () => {
       window.removeEventListener("scroll", stickyNav);
     };
   }, []);
 
   return (
-    <div className="navbar flex items-center justify-between py-2 px-[1rem] sm:px-[2rem] sm:py-5 md:px-[3.5rem] lg:px-[7rem] xl:px-[14rem] 2xl:px-[17rem]">
+    <div
+      className={`${sticky} navbar flex items-center justify-between py-2 px-[1rem] sm:px-[2rem] sm:py-5 md:px-[3.5rem] lg:px-[7rem] xl:px-[14rem] 2xl:px-[17rem]`}
+    >
       <Link to="/" className="flex items-center gap-3">
         <svg
           width="24"

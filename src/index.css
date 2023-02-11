@@ -42,11 +42,10 @@ html {
   z-index: 99;
 }
 
-.navbar-scoll {
+.navbar-scroll {
   /* background-color: rgba(255, 255, 255, 5%); */
-  background-color: rgba(11, 11, 34, 0.7);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(11, 11, 34, 0.5);
+  backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255, 255, 255, 10%);
 }
 
