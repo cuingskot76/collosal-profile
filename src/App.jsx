@@ -51,7 +51,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/service-detail",
+    path: "/services/service-detail",
     element: (
       <div>
         <Navbar />

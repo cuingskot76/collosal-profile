@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer aria-label="Site Footer" className="relative mt-10 sm:mt-20">
-      <div className="mx-auto max-w-screen-xl px-4 pt-16 pb-6 sm:px-6 lg:px-8 lg:pt-24">
+      <div className="mx-auto max-w-screen-xl px-4 pt-16 pb-6 sm:px-6 lg:px-8">
         <div className="border-t border-gray-100 pt-10 dark:border-gray-800 grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <div className="flex justify-center sm:justify-start">
@@ -40,11 +41,9 @@ const Footer = () => {
 
             <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
               <li>
-                <a
-                  href="/"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-teal-700 transition hover:text-teal-700/75 dark:text-teal-500 dark:hover:text-teal-500/75"
+                <Link
+                  to="/"
+                  className="text-[#007FEC] transition hover:text-[#266297]"
                 >
                   <span className="sr-only">Facebook</span>
                   <svg
@@ -59,15 +58,13 @@ const Footer = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="/"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-teal-700 transition hover:text-teal-700/75 dark:text-teal-500 dark:hover:text-teal-500/75"
+                <Link
+                  to="/"
+                  className="text-[#007FEC] transition hover:text-[#266297]"
                 >
                   <span className="sr-only">Instagram</span>
                   <svg
@@ -82,15 +79,13 @@ const Footer = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="/"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-teal-700 transition hover:text-teal-700/75 dark:text-teal-500 dark:hover:text-teal-500/75"
+                <Link
+                  to="/"
+                  className="text-[#007FEC] transition hover:text-[#266297]"
                 >
                   <span className="sr-only">Twitter</span>
                   <svg
@@ -101,15 +96,13 @@ const Footer = () => {
                   >
                     <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                   </svg>
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="/"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-teal-700 transition hover:text-teal-700/75 dark:text-teal-500 dark:hover:text-teal-500/75"
+                <Link
+                  to="/"
+                  className="text-[#007FEC] transition hover:text-[#266297]"
                 >
                   <span className="sr-only">GitHub</span>
                   <svg
@@ -124,15 +117,13 @@ const Footer = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="/"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-teal-700 transition hover:text-teal-700/75 dark:text-teal-500 dark:hover:text-teal-500/75"
+                <Link
+                  to="/"
+                  className="text-[#007FEC] transition hover:text-[#266297]"
                 >
                   <span className="sr-only">Dribbble</span>
                   <svg
@@ -147,7 +138,7 @@ const Footer = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -161,48 +152,48 @@ const Footer = () => {
               <nav aria-label="Footer About Nav" className="mt-8">
                 <ul className="space-y-4 text-sm">
                   <li>
-                    <a
+                    <Link
+                      to="/"
                       className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
                     >
                       Web Development
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
+                      to="/"
                       className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
                     >
                       App Development
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
+                      to="/"
                       className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
                     >
                       UI Design
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
+                      to="/"
                       className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
                     >
                       Consultation
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
+                      to="/"
                       className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
                     >
                       Maintenance
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>
@@ -216,57 +207,57 @@ const Footer = () => {
               <nav aria-label="Footer Services Nav" className="mt-8">
                 <ul className="space-y-4 text-sm">
                   <li>
-                    <a
+                    <Link
+                      to="/"
                       className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
                     >
                       About
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
+                      to="/"
                       className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
                     >
                       Contact
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
+                      to="/"
                       className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
                     >
                       Send Quote
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
+                      to="/"
                       className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
                     >
                       Privacy Policy
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
+                      to="/"
                       className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
                     >
                       Term of Service
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
+                      to="/"
                       className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
                     >
                       Jobs
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>
@@ -280,39 +271,39 @@ const Footer = () => {
               <nav aria-label="Footer Helpful Nav" className="mt-8">
                 <ul className="space-y-4 text-sm">
                   <li>
-                    <a
+                    <Link
+                      to="/"
                       className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
                     >
                       Support
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
+                      to="/"
                       className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
                     >
                       Documentation
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
+                      to="/"
                       className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
                     >
                       License
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
+                      to="/"
                       className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
                     >
                       Sitemap
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>

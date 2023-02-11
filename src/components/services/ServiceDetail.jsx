@@ -1,6 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+} from "@material-tailwind/react";
 
 const ServiceDetail = () => {
+  const [open, setOpen] = useState(0);
+
+  const handleOpen = (value) => {
+    setOpen(open === value ? 0 : value);
+  };
+
+  function Icon({ id, open }) {
+    return (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className={`${
+          id === open ? "rotate-180" : ""
+        } h-5 w-5 transition-transform`}
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
+    );
+  }
+
   return (
     <div className="relative">
       <div className=" mt-10 sm:mt-20 lg:mt-28 max-w-2xl py-2 px-[1rem] m-auto text-center flex flex-col justify-center items-center">
@@ -240,196 +269,166 @@ const ServiceDetail = () => {
       {/* end features details */}
 
       {/* FAQ */}
-      <div className="mt-10 sm:mt-20 lg:mt-28 max-w-2xl py-2 px-[1rem] m-auto flex flex-col justify-center items-center">
+      <div className="relative mt-10 sm:mt-20 lg:mt-28 max-w-2xl py-2 px-[1rem] m-auto flex flex-col justify-center items-center">
         <h3 className="subTitle text-center">FAQ</h3>
         <h1 className="font-bold pt-3 pb-6 text-2xl md:text-3xl text-center">
           Frequently asked questions, <br /> maybe the same as yours
         </h1>
+
+        {/* gradient start */}
+        <div className="hidden md:block absolute z-[-1] w-[10%] h-[10%] rounded-full top-[0] md:-right-[0] xl:-right-[20%] green-ball-gradient" />
+        <div className="hidden md:block absolute z-[-2] w-[7%] h-[7%] rounded-full -top-[10%] md:-left-[0] xl:-left-[30%] red-ball-gradient" />
+        <div className="hidden md:block absolute z-[-1] w-[5%] h-[5%] rounded-full top-[30%] md:-right-[0] xl:-right-[30%] blue-ball-gradient" />
+        {/* gradient end */}
       </div>
-      <section class="py-10">
-        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-          <div class="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
-            <div class="faq-content transition-all duration-200">
-              <button
-                type="button"
-                class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
-              >
-                <span class="flex text-lg font-semibold">
-                  How to create an account?
-                </span>
-
-                <svg
-                  class="w-6 h-6 text-gray-400 rotate-180"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-
-              <div class="px-4 pb-5 sm:px-6 sm:pb-6">
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit
-                  <a
-                    href="#"
-                    title=""
-                    class="text-blue-600 transition-all duration-200 hover:underline"
-                  >
-                    aliqua dolor
-                  </a>
-                  do amet sint. Velit officia consequat duis enim velit mollit.
-                </p>
-              </div>
-            </div>
-
-            <div class="faq-content transition-all duration-200 cursor-pointer">
-              <button
-                type="button"
-                class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
-              >
-                <span class="flex text-lg font-semibold">
-                  How can I make payment using Paypal?
-                </span>
-
-                <svg
-                  class="w-6 h-6 text-gray-400"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-
-              <div class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit
-                  <a
-                    href="#"
-                    title=""
-                    class="text-blue-600 transition-all duration-200 hover:underline"
-                  >
-                    aliqua dolor
-                  </a>
-                  do amet sint. Velit officia consequat duis enim velit mollit.
-                </p>
-              </div>
-            </div>
-
-            <div class="faq-content transition-all duration-200 cursor-pointer">
-              <div class="">
-                <button
-                  type="button"
-                  class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
-                >
-                  <span class="flex text-lg font-semibold">
-                    Can I cancel my plan?
-                  </span>
-
-                  <svg
-                    class="w-6 h-6 text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </button>
-
-                <div class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
-                  <p>
-                    Amet minim mollit non deserunt ullamco est sit
-                    <a
-                      href="#"
-                      title=""
-                      class="text-blue-600 transition-all duration-200 hover:underline"
-                    >
-                      aliqua dolor
-                    </a>
-                    do amet sint. Velit officia consequat duis enim velit
-                    mollit.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="faq-content transition-all duration-200 cursor-pointer">
-              <button
-                type="button"
-                class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
-              >
-                <span class="flex text-lg font-semibold">
-                  How can I reach to support?
-                </span>
-
-                <svg
-                  class="w-6 h-6 text-gray-400"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-
-              <div class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
-                <p>
-                  Amet minim mollit non deserunt ullamco est sit
-                  <a
-                    href="#"
-                    title=""
-                    class="text-blue-600 transition-all duration-200 hover:underline"
-                  >
-                    aliqua dolor
-                  </a>
-                  do amet sint. Velit officia consequat duis enim velit mollit.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <p class="text-center text-gray-600 textbase mt-9">
-            Didn’t find the answer you are looking for?
-            <a
-              href="#"
-              title=""
-              class="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline"
+      <div className="md:mt-10 py-2 px-[1rem] sm:px-[2rem] sm:py-5 md:px-[3.5rem] lg:px-[7rem] xl:px-[14rem] 2xl:px-[17rem]">
+        <div className="block md:hidden">
+          <Accordion open={open === 0} icon={<Icon id={0} open={open} />}>
+            <AccordionHeader
+              onClick={() => handleOpen(0)}
+              className="text-white hover:text-gray-500 border-gray-800"
             >
-              Contact our support
-            </a>
-          </p>
+              Can I consult first?
+            </AccordionHeader>
+            <AccordionBody className="muted">
+              Of course you can consult us first. We are very happy to help your
+              problems and provide our best solutions. You can contact us via
+              the contact page.
+            </AccordionBody>
+          </Accordion>
+          <Accordion open={open === 2} icon={<Icon id={2} open={open} />}>
+            <AccordionHeader
+              onClick={() => handleOpen(2)}
+              className="text-white hover:text-gray-500 border-gray-800"
+            >
+              How is the payment system?
+            </AccordionHeader>
+            <AccordionBody className="muted">
+              If the project has agreed, you will pay an advance, and when the
+              progress reaches 50% you will make a second payment, and when the
+              progress is 100% you will pay it off.
+            </AccordionBody>
+          </Accordion>
+          <Accordion open={open === 3} icon={<Icon id={3} open={open} />}>
+            <AccordionHeader
+              onClick={() => handleOpen(3)}
+              className="text-white hover:text-gray-500 border-gray-800"
+            >
+              What if the project stops halfway?
+            </AccordionHeader>
+            <AccordionBody className="muted">
+              We promise to always finish the project on time, if a problem
+              occurs (because of our mistake), all payments will be refunded.
+              And the project will be terminated.
+            </AccordionBody>
+          </Accordion>
+          <Accordion open={open === 4} icon={<Icon id={4} open={open} />}>
+            <AccordionHeader
+              onClick={() => handleOpen(4)}
+              className="text-white hover:text-gray-500 border-gray-800"
+            >
+              Does it include servers and domains?
+            </AccordionHeader>
+            <AccordionBody className="muted">
+              You don't need to think about anything else, we have everything
+              prepared. You just need to check your progress and make sure the
+              features you want are the right one.
+            </AccordionBody>
+          </Accordion>
+          <Accordion open={open === 5} icon={<Icon id={5} open={open} />}>
+            <AccordionHeader
+              onClick={() => handleOpen(5)}
+              className="text-white hover:text-gray-500 border-gray-800"
+            >
+              Will I get the source code?
+            </AccordionHeader>
+            <AccordionBody className="muted">
+              When the project is 100% complete, all the resources, such as
+              design files, analysis diagrams, source code, etc. will be
+              provided to you. You don't need to worry about this.
+            </AccordionBody>
+          </Accordion>
+          <Accordion open={open === 6} icon={<Icon id={6} open={open} />}>
+            <AccordionHeader
+              onClick={() => handleOpen(6)}
+              className="text-white hover:text-gray-500 border-gray-800"
+            >
+              Is there a warranty?
+            </AccordionHeader>
+            <AccordionBody className="muted">
+              1 year warranty for our errors or mistakes. If you want to add a
+              feature that is not included in the warranty, there is another fee
+              per feature, and the price depends on the difficulty.
+            </AccordionBody>
+          </Accordion>
         </div>
-      </section>
 
+        <div className="hidden md:grid grid-cols-2 gap-5 xl:gap-10">
+          <div className="pb-8">
+            <p className="font-semibold mb-3">Can I consult first?</p>
+            <span className="muted">
+              Of course you can consult us first. We are very happy to help your
+              problems and provide our best solutions. You can contact us via
+              the contact page.
+            </span>
+          </div>
+          <div>
+            <p className="font-semibold mb-3"> How is the payment system?</p>
+            <span className="muted">
+              If the project has agreed, you will pay an advance, and when the
+              progress reaches 50% you will make a second payment, and when the
+              progress is 100% you will pay it off.
+            </span>
+          </div>
+          <div className="pb-8">
+            <p className="font-semibold mb-3">
+              What if the project stops halfway?
+            </p>
+            <span className="muted">
+              We promise to always finish the project on time, if a problem
+              occurs (because of our mistake), all payments will be refunded.
+              And the project will be terminated.
+            </span>
+          </div>
+          <div>
+            <p className="font-semibold mb-3">
+              Does it include servers and domains?
+            </p>
+            <span className="muted">
+              You don't need to think about anything else, we have everything
+              prepared. You just need to check your progress and make sure the
+              features you want are the right one.
+            </span>
+          </div>
+          <div>
+            <p className="font-semibold mb-3"> Will I get the source code?</p>
+            <span className="muted">
+              When the project is 100% complete, all the resources, such as
+              design files, analysis diagrams, source code, etc. will be
+              provided to you. You don't need to worry about this.
+            </span>
+          </div>
+          <div>
+            <p className="font-semibold mb-3"> Is there a warranty?</p>
+            <span className="muted">
+              1 year warranty for our errors or mistakes. If you want to add a
+              feature that is not included in the warranty, there is another fee
+              per feature, and the price depends on the difficulty.
+            </span>
+          </div>
+        </div>
+
+        <p className="mt-20 text-center">
+          Didn't find an answer?{" "}
+          <span className="text-[#6016FC] font-bold border-b border-b-[#6016FC]">
+            Do not hesitate to ask!
+          </span>{" "}
+        </p>
+      </div>
       {/* end FAQ */}
 
       {/* gradient start */}
-      <div className="absolute z-[-1] w-[30%] h-[30%] top-0 left-0 orange-gradient__2 blur-[300px] sm:blur-[400px]" />
+      <div className="absolute z-[-1] w-[30%] h-[30%] top-0 left-0 orange-gradient__2 blur-[300px] sm:blur-[400px]"></div>
       <div className="absolute z-[-2] w-[20%] h-[30%] top-0 right-[40%] green-gradient__2 blur-[200px] sm:blur-[300px]" />
       <div className="absolute z-[-1] w-[30%] h-[30%] -right-[0] 2xl:-right-[0] top-20 red-gradient__2 blur-[300px] sm:blur-[400px] sm:top-0" />
       {/* gradient end */}

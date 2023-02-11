@@ -70,7 +70,7 @@ const Design = () => {
             {/* end design skills */}
             {/* btn detail */}
             <Link
-              to="/service-detail"
+              to="/services/service-detail"
               className="flex w-fit font-semibold text-center items-center justify-start md:justify-end gap-5 mb-10 hover:text-gray-500"
             >
               <p>Service Detail</p>
