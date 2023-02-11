@@ -84,7 +84,7 @@ const Navbar = () => {
         className="ham hamRotate ham8 sm:hidden"
         viewBox="0 0 100 100"
         width="50"
-        onClick={handleClickHamburger}
+        // onClick={handleClickHamburger}
       >
         <path
           className="line top"
