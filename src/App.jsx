@@ -10,7 +10,7 @@ import Project from "./components/home/Project";
 import Team from "./components/home/Team";
 import Testimonials from "./components/home/Testimonials";
 import Work from "./components/home/Work";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import Projects from "./components/project/Projects";
 import Design from "./components/services/Design";
 import Development from "./components/services/Development";
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <div className="">
-        <Navbar />
+        {/* <Navbar /> */}
         <Hero />
         <Features />
         <Partners />
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
     path: "/services",
     element: (
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <HeroServices />
         <Design />
         <Development />
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
     path: "/services/service-detail",
     element: (
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <ServiceDetail />
         <Callout />
         <Footer />
@@ -68,7 +68,7 @@ const router = createBrowserRouter([
     path: "/work",
     element: (
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <Works />
         <Callout />
         <Footer />
@@ -79,7 +79,7 @@ const router = createBrowserRouter([
     path: "/projects",
     element: (
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <Projects />
         <Callout />
         <Footer />
@@ -90,7 +90,7 @@ const router = createBrowserRouter([
     path: "/about",
     element: (
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <About />
         <Callout />
         <Footer />
