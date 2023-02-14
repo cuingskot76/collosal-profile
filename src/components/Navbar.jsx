@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`${sticky} navbar flex items-center justify-between py-2 px-[1rem] sm:px-[2rem] sm:py-5 md:px-[3.5rem] lg:px-[7rem] xl:px-[14rem] 2xl:px-[17rem]`}
+      className={`${sticky} navbar flex items-center justify-between py-2 px-[1.5rem] sm:px-[2rem] sm:py-5 md:px-[3.5rem] lg:px-[5rem] xl:px-[10rem] 2xl:px-[15rem]`}
     >
       <Link to="/" className="all-nav flex items-center gap-3">
         <svg
