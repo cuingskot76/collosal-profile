@@ -25,13 +25,13 @@ const router = createBrowserRouter([
       <div className="">
         <Navbar />
         <Hero />
-        {/* <Features /> */}
-        {/* <Partners /> */}
-        {/* <Work /> */}
-        {/* <Team /> */}
-        {/* <Project /> */}
-        {/* <Testimonials /> */}
-        {/* <Callout /> */}
+        <Features />
+        <Partners />
+        <Work />
+        <Team />
+        <Project />
+        <Testimonials />
+        <Callout />
         <Footer />
         {/* <Outlet /> */}
       </div>
