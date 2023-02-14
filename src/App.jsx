@@ -5,12 +5,11 @@ import Callout from "./components/home/Callout";
 import Features from "./components/home/Features";
 import Hero from "./components/home/Hero";
 import Partners from "./components/home/Partners";
-import Pricing from "./components/home/Pricing";
 import Project from "./components/home/Project";
 import Team from "./components/home/Team";
 import Testimonials from "./components/home/Testimonials";
 import Work from "./components/home/Work";
-// import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import Projects from "./components/project/Projects";
 import Design from "./components/services/Design";
 import Development from "./components/services/Development";
@@ -24,14 +23,13 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <div className="">
-        {/* <Navbar /> */}
+        <Navbar />
         <Hero />
         <Features />
         <Partners />
         <Work />
         <Team />
         <Project />
-        {/* <Pricing /> */}
         <Testimonials />
         <Callout />
         <Footer />
@@ -43,7 +41,7 @@ const router = createBrowserRouter([
     path: "/services",
     element: (
       <div>
-        {/* <Navbar /> */}
+        <Navbar />
         <HeroServices />
         <Design />
         <Development />
@@ -57,8 +55,8 @@ const router = createBrowserRouter([
     path: "/services/service-detail",
     element: (
       <div>
-        {/* <Navbar /> */}
-        <ServiceDetail />
+        <Navbar />
+        {/* <ServiceDetail /> */}
         <Callout />
         <Footer />
       </div>
@@ -68,7 +66,7 @@ const router = createBrowserRouter([
     path: "/work",
     element: (
       <div>
-        {/* <Navbar /> */}
+        <Navbar />
         <Works />
         <Callout />
         <Footer />
@@ -79,7 +77,7 @@ const router = createBrowserRouter([
     path: "/projects",
     element: (
       <div>
-        {/* <Navbar /> */}
+        <Navbar />
         <Projects />
         <Callout />
         <Footer />
@@ -90,7 +88,7 @@ const router = createBrowserRouter([
     path: "/about",
     element: (
       <div>
-        {/* <Navbar /> */}
+        <Navbar />
         <About />
         <Callout />
         <Footer />
