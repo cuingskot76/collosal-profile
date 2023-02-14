@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         <Work />
         <Team />
         <Project />
-        <Pricing />
+        {/* <Pricing /> */}
         <Testimonials />
         <Callout />
         <Footer />
