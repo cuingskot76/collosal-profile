@@ -1,4 +1,5 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import About from "./components/about/About";
 import Footer from "./components/Footer";
 import Callout from "./components/home/Callout";
 import Features from "./components/home/Features";
@@ -10,11 +11,13 @@ import Team from "./components/home/Team";
 import Testimonials from "./components/home/Testimonials";
 import Work from "./components/home/Work";
 import Navbar from "./components/Navbar";
+import Projects from "./components/project/Projects";
 import Design from "./components/services/Design";
 import Development from "./components/services/Development";
 import HeroServices from "./components/services/HeroServices";
 import Maintenance from "./components/services/Maintenance";
 import ServiceDetail from "./components/services/ServiceDetail";
+import Works from "./components/work/Works";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +59,39 @@ const router = createBrowserRouter([
       <div>
         <Navbar />
         <ServiceDetail />
+        <Callout />
+        <Footer />
+      </div>
+    ),
+  },
+  {
+    path: "/work",
+    element: (
+      <div>
+        <Navbar />
+        <Works />
+        <Callout />
+        <Footer />
+      </div>
+    ),
+  },
+  {
+    path: "/projects",
+    element: (
+      <div>
+        <Navbar />
+        <Projects />
+        <Callout />
+        <Footer />
+      </div>
+    ),
+  },
+  {
+    path: "/about",
+    element: (
+      <div>
+        <Navbar />
+        <About />
         <Callout />
         <Footer />
       </div>

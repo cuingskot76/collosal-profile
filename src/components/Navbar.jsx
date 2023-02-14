@@ -14,6 +14,17 @@ const Navbar = () => {
     }
   };
 
+  const handleClickNavbar = () => {
+    const nav = document.querySelectorAll(".all-nav");
+
+    nav.forEach((link) => {
+      link.addEventListener("click", function (e) {
+        nav.forEach((link) => link.classList.remove("active"));
+        link.classList.toggle("active");
+      });
+    });
+  };
+
   useEffect(() => {
     const stickyNav = () => {
       let windowScroll = window.scrollY;
@@ -31,7 +42,7 @@ const Navbar = () => {
     <div
       className={`${sticky} navbar flex items-center justify-between py-2 px-[1rem] sm:px-[2rem] sm:py-5 md:px-[3.5rem] lg:px-[7rem] xl:px-[14rem] 2xl:px-[17rem]`}
     >
-      <Link to="/" className="flex items-center gap-3">
+      <Link to="/" className="all-nav flex items-center gap-3">
         <svg
           width="24"
           height="24"
@@ -58,16 +69,20 @@ const Navbar = () => {
       </Link>
       <div className="hidden sm:block ">
         <ul className="flex gap-3 md:gap-7 lg:gap-12 xl:gap-14">
-          <Link to="/services" className="navbar-links">
+          <Link
+            to="/services"
+            className="all-nav navbar-links navbar-muted"
+            onClick={handleClickNavbar}
+          >
             Services
           </Link>
-          <Link to="/work" className="navbar-links">
+          <Link to="/work" className="all-nav navbar-links navbar-muted">
             How We Work
           </Link>
-          <Link to="/projects" className="navbar-links">
+          <Link to="/projects" className="all-nav navbar-links navbar-muted">
             Projects
           </Link>
-          <Link to="/about" className="navbar-links">
+          <Link to="/about" className="all-nav navbar-links navbar-muted">
             About
           </Link>
         </ul>

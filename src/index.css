@@ -51,7 +51,10 @@ html {
 
 .navbar-links {
   font-family: "Noto Sans", sans-serif;
-  color: rgba(255, 255, 255, 80%);
+  /* color: rgba(255, 255, 255, 80%); */
+}
+.navbar-muted {
+  color: rgba(255, 255, 255, 60%);
 }
 
 .orange-gradient {
