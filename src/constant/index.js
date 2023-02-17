@@ -135,3 +135,36 @@ export const maintenance = [
       "We will back up your servers every day, clean them every week, upgrade them when there is an update.",
   },
 ];
+
+// works
+export const works1 = [
+  {
+    title: "STEP 01",
+    subTitle: "Let's talk about your company's problems first",
+    url: "../../main/work-1.png",
+    description:
+      "After submitting the quote form, we will review the data, then we will contact you. You can discuss with our team regarding your problem and find a solution to that problem.In this step, you will discuss what application to build.",
+  },
+];
+
+export const works2 = [
+  {
+    title: "STEP 02",
+    subTitle:
+      "Doing planning, design and development until everything is finished",
+    url: "../../main/work-2.png",
+    description:
+      "When everything is agreed upon, our team will make plans related to the application that will be created. Starting from analysis, design, to development.In this step, the application is 100% complete.",
+  },
+];
+
+export const works3 = [
+  {
+    title: "STEP 03",
+    subTitle:
+      "The project is complete and we ship all the project assets, and access to the server",
+    url: "../../main/work-3.png",
+    description:
+      "We will be responsible for delivering all the project assets to you, don't worry. These assets include, design files, source code, server access, and so on.In this step, everything is done and the contract ends.",
+  },
+];

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer aria-label="Site Footer" className="relative mt-10 sm:mt-20">
       <div className="mx-auto max-w-screen-xl px-4 pt-16 pb-6 sm:px-6 lg:px-8">
-        <div className="border-t border-gray-100 pt-10 dark:border-gray-800 grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div className="border-t  pt-10 border-gray-800 grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <div className="flex justify-center sm:justify-start">
               <div className="flex items-center gap-3">
@@ -35,7 +35,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-400 sm:mx-0 sm:max-w-xs sm:text-left">
+            <p className="mx-auto mt-6 max-w-md text-center leading-relaxed  text-gray-400 sm:mx-0 sm:max-w-xs sm:text-left">
               Copyrigth &#169; 2021 Collosal. <br /> All rights reserved.
             </p>
 
@@ -145,16 +145,14 @@ const Footer = () => {
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2">
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900 dark:text-white">
-                SERVICES
-              </p>
+              <p className="text-lg font-medium  text-white">SERVICES</p>
 
               <nav aria-label="Footer About Nav" className="mt-8">
                 <ul className="space-y-4 text-sm">
                   <li>
                     <Link
                       to="/"
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className=" transition  text-white hover:text-white/75"
                     >
                       Web Development
                     </Link>
@@ -163,7 +161,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className=" transition  text-white hover:text-white/75"
                     >
                       App Development
                     </Link>
@@ -172,7 +170,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className=" transition  text-white hover:text-white/75"
                     >
                       UI Design
                     </Link>
@@ -181,7 +179,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className=" transition  text-white hover:text-white/75"
                     >
                       Consultation
                     </Link>
@@ -190,7 +188,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className=" transition  text-white hover:text-white/75"
                     >
                       Maintenance
                     </Link>
@@ -200,16 +198,14 @@ const Footer = () => {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900 dark:text-white">
-                COMPANY
-              </p>
+              <p className="text-lg font-medium  text-white">COMPANY</p>
 
               <nav aria-label="Footer Services Nav" className="mt-8">
                 <ul className="space-y-4 text-sm">
                   <li>
                     <Link
                       to="/"
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className=" transition  text-white hover:text-white/75"
                     >
                       About
                     </Link>
@@ -218,7 +214,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className=" transition  text-white hover:text-white/75"
                     >
                       Contact
                     </Link>
@@ -227,7 +223,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className=" transition  text-white hover:text-white/75"
                     >
                       Send Quote
                     </Link>
@@ -236,7 +232,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className=" transition  text-white hover:text-white/75"
                     >
                       Privacy Policy
                     </Link>
@@ -245,7 +241,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className=" transition  text-white hover:text-white/75"
                     >
                       Term of Service
                     </Link>
@@ -254,7 +250,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className=" transition  text-white hover:text-white/75"
                     >
                       Jobs
                     </Link>
@@ -264,16 +260,14 @@ const Footer = () => {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900 dark:text-white">
-                RESOURCES
-              </p>
+              <p className="text-lg font-medium  text-white">RESOURCES</p>
 
               <nav aria-label="Footer Helpful Nav" className="mt-8">
                 <ul className="space-y-4 text-sm">
                   <li>
                     <Link
                       to="/"
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className=" transition  text-white hover:text-white/75"
                     >
                       Support
                     </Link>
@@ -282,7 +276,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className=" transition  text-white hover:text-white/75"
                     >
                       Documentation
                     </Link>
@@ -291,7 +285,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className=" transition  text-white hover:text-white/75"
                     >
                       License
                     </Link>
@@ -300,7 +294,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to="/"
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className=" transition  text-white hover:text-white/75"
                     >
                       Sitemap
                     </Link>
@@ -311,7 +305,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-gray-100 pt-6 dark:border-gray-800 text-center flex flex-col justify-center items-center ">
+        <div className="mt-12 border-t  pt-6 border-gray-800 text-center flex flex-col justify-center items-center ">
           <p className="flex text-center items-center ">
             Made with
             <svg

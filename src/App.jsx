@@ -56,7 +56,7 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Navbar />
-        {/* <ServiceDetail /> */}
+        <ServiceDetail />
         <Callout />
         <Footer />
       </div>

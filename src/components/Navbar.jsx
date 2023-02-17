@@ -22,6 +22,7 @@ const Navbar = () => {
         nav.forEach((link) => {
           link.classList.remove("active");
           link.classList.add("navbar-muted");
+          link.classList.remove("muted");
         });
         link.classList.toggle("active");
         link.classList.toggle("navbar-muted");
@@ -46,7 +47,7 @@ const Navbar = () => {
     <div
       className={`${sticky} navbar flex items-center justify-between py-2 px-[1.5rem] sm:px-[2rem] sm:py-5 md:px-[3.5rem] lg:px-[5rem] xl:px-[10rem] 2xl:px-[15rem]`}
     >
-      <Link to="/" className="all-nav flex items-center gap-3">
+      <Link to="/" className="all-nav flex items-center gap-3 text-white">
         <svg
           width="24"
           height="24"
@@ -75,18 +76,18 @@ const Navbar = () => {
         <ul className="flex gap-3 md:gap-7 lg:gap-12 xl:gap-14">
           <Link
             to="/services"
-            className="all-nav navbar-links  "
+            className="all-nav navbar-links muted "
             onClick={handleClickNavbar}
           >
             Services
           </Link>
-          <Link to="/work" className="all-nav navbar-links  ">
+          <Link to="/work" className="all-nav navbar-links muted ">
             How We Work
           </Link>
-          <Link to="/projects" className="all-nav navbar-links  ">
+          <Link to="/projects" className="all-nav navbar-links muted ">
             Projects
           </Link>
-          <Link to="/about" className="all-nav navbar-links  ">
+          <Link to="/about" className="all-nav navbar-links muted ">
             About
           </Link>
         </ul>
