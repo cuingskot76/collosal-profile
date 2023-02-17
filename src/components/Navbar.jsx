@@ -19,8 +19,12 @@ const Navbar = () => {
 
     nav.forEach((link) => {
       link.addEventListener("click", function (e) {
-        nav.forEach((link) => link.classList.remove("active"));
+        nav.forEach((link) => {
+          link.classList.remove("active");
+          link.classList.add("navbar-muted");
+        });
         link.classList.toggle("active");
+        link.classList.toggle("navbar-muted");
       });
     });
   };
@@ -71,18 +75,18 @@ const Navbar = () => {
         <ul className="flex gap-3 md:gap-7 lg:gap-12 xl:gap-14">
           <Link
             to="/services"
-            className="all-nav navbar-links navbar-muted"
+            className="all-nav navbar-links  "
             onClick={handleClickNavbar}
           >
             Services
           </Link>
-          <Link to="/work" className="all-nav navbar-links navbar-muted">
+          <Link to="/work" className="all-nav navbar-links  ">
             How We Work
           </Link>
-          <Link to="/projects" className="all-nav navbar-links navbar-muted">
+          <Link to="/projects" className="all-nav navbar-links  ">
             Projects
           </Link>
-          <Link to="/about" className="all-nav navbar-links navbar-muted">
+          <Link to="/about" className="all-nav navbar-links  ">
             About
           </Link>
         </ul>
