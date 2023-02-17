@@ -19,6 +19,9 @@ html {
 .border__ {
   border: 1px solid rgba(255, 255, 255, 10%);
 }
+.border__t {
+  border-top: 1px solid rgba(255, 255, 255, 10%);
+}
 
 .button-color {
   background-color: #6016fc;
@@ -31,6 +34,12 @@ html {
 
 .bg-light {
   background-color: rgba(255, 255, 255, 5%);
+}
+.bg-light__ {
+  background-color: rgba(255, 255, 255, 6%);
+}
+.bg-teams {
+  background-color: rgba(2, 2, 8, 0.8);
 }
 
 .muted {
