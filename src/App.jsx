@@ -15,14 +15,20 @@ import Design from "./components/services/Design";
 import Development from "./components/services/Development";
 import HeroServices from "./components/services/HeroServices";
 import Maintenance from "./components/services/Maintenance";
-import ServiceDetail from "./components/services/ServiceDetail";
-import Works from "./components/work/Works";
+import HeroServiceDetails from "./components/service-details/HeroServiceDetails";
+import DevelopmentDetails from "./components/service-details/DevelopmentDetails";
+import FeatureDetails from "./components/service-details/FeatureDetails";
+import Faq from "./components/service-details/Faq";
+import HeroWorks from "./components/work/HeroWorks";
+import ProblemWorks from "./components/work/ProblemWorks";
+import PlanningWorks from "./components/work/PlanningWorks";
+import CompleteWorks from "./components/work/CompleteWorks";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <div className="">
+      <div>
         <Navbar />
         <Hero />
         <Features />
@@ -56,7 +62,10 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Navbar />
-        <ServiceDetail />
+        <HeroServiceDetails />
+        <DevelopmentDetails />
+        <FeatureDetails />
+        <Faq />
         <Callout />
         <Footer />
       </div>
@@ -67,7 +76,10 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Navbar />
-        <Works />
+        <HeroWorks />
+        <ProblemWorks />
+        <PlanningWorks />
+        <CompleteWorks />
         <Callout />
         <Footer />
       </div>
