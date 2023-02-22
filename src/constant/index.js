@@ -65,14 +65,26 @@ export const project = [
     subTitle: "PROJECTS",
     details: [
       {
+        id: 1,
         title: "The Mobile App Landing Page",
         description: "A landing page for mobile app",
         url: "../../projects/mobile__app.webp",
+        details:
+          "Something has always existed. According to physics, there can never be true physical nothingness—though there can be times when existence resembles nothing.",
+        category: "Mobile App",
+        client: "Biffco Enterprises Ltd.",
+        technology: "React Native",
       },
       {
+        id: 2,
         title: "The Desktop App Landing Page",
         description: "A landing page for desktop app",
         url: "../../projects/desktop__app.webp",
+        details:
+          "lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.",
+        category: "Desktop App",
+        client: "Abstergo Ltd.",
+        technology: "Electron",
       },
     ],
   },

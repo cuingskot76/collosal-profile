@@ -10,7 +10,6 @@ import Team from "./components/home/Team";
 import Testimonials from "./components/home/Testimonials";
 import Work from "./components/home/Work";
 import Navbar from "./components/Navbar";
-import Projects from "./components/project/Projects";
 import Design from "./components/services/Design";
 import Development from "./components/services/Development";
 import HeroServices from "./components/services/HeroServices";
@@ -23,6 +22,9 @@ import HeroWorks from "./components/work/HeroWorks";
 import ProblemWorks from "./components/work/ProblemWorks";
 import PlanningWorks from "./components/work/PlanningWorks";
 import CompleteWorks from "./components/work/CompleteWorks";
+import HeroProject from "./components/project/HeroProjects";
+import MainProject from "./components/project/MainProject";
+import AllProjects from "./components/project/AllProjects";
 
 const router = createBrowserRouter([
   {
@@ -90,7 +92,9 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Navbar />
-        <Projects />
+        <HeroProject />
+        {/* <MainProject /> */}
+        {/* <AllProjects /> */}
         <Callout />
         <Footer />
       </div>

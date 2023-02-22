@@ -9,12 +9,12 @@ const About = () => {
         <div className="flex flex-col justify-center items-center lg:grid lg:grid-cols-2 md:gap-5 lg:gap-10 2xl:gap-32 ">
           <div className="mb-28">
             <img
-              src="../../../public/main/about-1.png"
+              src="../../../main/about-1.png"
               alt="about-1"
               className="relative"
             />
             <img
-              src="../../../public/main/about-2.png"
+              src="../../../main/about-2.png"
               alt="about-2"
               className="absolute top-1/3 left-1/2 lg:top-1/2 lg:left-1/4"
             />
@@ -158,7 +158,7 @@ const About = () => {
           <div class="group relative rounded-3xl  space-y-6 overflow-hidden">
             <img
               class="mx-auto h-[26rem] w-full grayscale object-cover object-top ransition duration-500 group-hover:scale-105 group-hover:grayscale-0"
-              src="../../../public/teams/ali.webp"
+              src="../../../teams/ali.webp"
               alt="woman"
               loading="lazy"
               width="640"
@@ -178,7 +178,7 @@ const About = () => {
           <div class="group relative rounded-3xl  space-y-6 overflow-hidden">
             <img
               class="mx-auto h-[26rem] w-full grayscale object-cover object-top ransition duration-500 group-hover:scale-105 group-hover:grayscale-0"
-              src="../../../public/teams/amir.webp"
+              src="../../../teams/amir.webp"
               alt="woman"
               loading="lazy"
               width="640"
@@ -198,7 +198,7 @@ const About = () => {
           <div class="group relative rounded-3xl  space-y-6 overflow-hidden">
             <img
               class="mx-auto h-[26rem] w-full grayscale object-cover object-top transition duration-500 group-hover:scale-105 group-hover:grayscale-0"
-              src="../../../public/teams/khaled.webp"
+              src="../../../teams/khaled.webp"
               alt="man"
               loading="lazy"
               width="640"
@@ -222,7 +222,7 @@ const About = () => {
           <div class="group relative rounded-3xl  space-y-6 overflow-hidden">
             <img
               class="mx-auto h-[26rem] w-full grayscale object-cover object-top ransition duration-500 group-hover:scale-105 group-hover:grayscale-0"
-              src="../../../public/teams/ludovic.webp"
+              src="../../../teams/ludovic.webp"
               alt="woman"
               loading="lazy"
               width="640"
@@ -244,7 +244,7 @@ const About = () => {
           <div class="group relative rounded-3xl  space-y-6 overflow-hidden">
             <img
               class="mx-auto h-[26rem] w-full grayscale object-cover object-top ransition duration-500 group-hover:scale-105 group-hover:grayscale-0"
-              src="../../../public/teams/sigmud.webp"
+              src="../../../teams/sigmud.webp"
               alt="woman"
               loading="lazy"
               width="640"
@@ -266,7 +266,7 @@ const About = () => {
           <div class="group relative rounded-3xl  space-y-6 overflow-hidden">
             <img
               class="mx-auto h-[26rem] w-full grayscale object-cover object-top ransition duration-500 group-hover:scale-105 group-hover:grayscale-0"
-              src="../../../public/teams/wan.webp"
+              src="../../../teams/wan.webp"
               alt="woman"
               loading="lazy"
               width="640"
