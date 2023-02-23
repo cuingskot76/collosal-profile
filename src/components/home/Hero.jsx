@@ -17,9 +17,9 @@ const Hero = () => {
         <button className="button py-3 px-5">Learn More</button>
       </div>
       {/* gradient start */}
-      <div className="absolute z-[-1] w-[80%] h-[90%] sm:top-0 -left-full orange-gradient " />
-      <div className="absolute z-[-1] w-[40%] h-[70%] sm:bottom-40 green-gradient " />
-      <div className="absolute z-[-1] w-[70%] h-[80%] sm:-right-[0] 2xl:-right-[50%] bottom-20 red-gradient " />
+      <div className="absolute z-[-1] w-[100%] h-[100%] bottom-0 right-[50%] orange-gradient" />
+      <div className="absolute z-[-2] w-[50%] h-[50%] green-gradient top-0 left-[30%]" />
+      <div className="absolute z-[-1] w-[100%] h-[100%] bottom-0 right-[50%] red-gradient sm:-right-[0] 2xl:-right-[50%]" />
       {/* gradient end */}
     </div>
   );
