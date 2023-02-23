@@ -22,8 +22,8 @@ const Team = () => {
         </div>
       ))}
       {/* gradient start */}
-      <div className="absolute z-[-1] w-[40%] h-[20%] bottom-0 left-[50%] orange-gradient" />
-      <div className="absolute z-[-2] w-[10%] h-[30%] blue-gradient top-0 right-[20%]" />
+      {/* <div className="absolute z-[-1] w-[40%] h-[20%] bottom-0 left-[50%] orange-gradient" />
+      <div className="absolute z-[-2] w-[10%] h-[30%] blue-gradient top-0 right-[20%]" /> */}
       {/* gradient end */}
     </div>
   );

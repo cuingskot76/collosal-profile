@@ -36,9 +36,9 @@ const Project = () => {
         </div>
       ))}
       {/* gradient start */}
-      <div className="hidden md:block absolute z-[-1] w-[10%] h-[10%] rounded-full top-[0] md:-right-[0] xl:-right-[20%] green-ball-gradient" />
+      {/* <div className="hidden md:block absolute z-[-1] w-[10%] h-[10%] rounded-full top-[0] md:-right-[0] xl:-right-[20%] green-ball-gradient" />
       <div className="hidden md:block absolute z-[-2] w-[7%] h-[7%] rounded-full -top-[10%] md:-left-[0] xl:-left-[30%] red-ball-gradient" />
-      <div className="hidden md:block absolute z-[-1] w-[5%] h-[5%] rounded-full top-[30%] md:-right-[0] xl:-right-[30%] blue-ball-gradient" />
+      <div className="hidden md:block absolute z-[-1] w-[5%] h-[5%] rounded-full top-[30%] md:-right-[0] xl:-right-[30%] blue-ball-gradient" /> */}
       {/* gradient end */}
     </div>
   );

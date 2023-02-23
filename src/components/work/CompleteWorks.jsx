@@ -28,8 +28,8 @@ const CompleteWorks = () => {
         </div>
       ))}
       {/* gradient start */}
-      {/* <div className="absolute z-[-1] w-[40%] h-[20%] bottom-0 right-[50%] orange-gradient" />
-      <div className="absolute z-[-2] w-[10%] h-[30%] green-gradient top-0 left-[30%]" /> */}
+      <div className="absolute z-[-1] w-[40%] h-[20%] bottom-0 right-[50%] orange-gradient" />
+      <div className="absolute z-[-2] w-[10%] h-[30%] green-gradient top-0 left-[30%]" />
       {/* gradient end */}
     </div>
   );
