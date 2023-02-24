@@ -296,9 +296,9 @@ const About = () => {
       {/* end__our-teams */}
 
       {/* gradient start */}
-      <div className="absolute z-[-1] w-[30%] h-[30%] top-0 left-0 orange-gradient__2 blur-[300px] sm:blur-[400px]"></div>
-      <div className="absolute z-[-2] w-[20%] h-[30%] top-0 right-[40%] green-gradient__2 blur-[200px] sm:blur-[300px]" />
-      <div className="absolute z-[-1] w-[30%] h-[30%] -right-[0] 2xl:-right-[0] top-20 red-gradient__2 blur-[300px] sm:blur-[400px] sm:top-0" />
+      <div className="hidden sm:block absolute z-[-1] w-[30%] h-[30%] top-0 left-0 orange-gradient__2 blur-[300px] sm:blur-[400px]"></div>
+      <div className="hidden sm:block absolute z-[-2] w-[20%] h-[30%] top-0 right-[40%] green-gradient__2 blur-[200px] sm:blur-[300px]" />
+      <div className="hidden sm:block absolute z-[-1] w-[30%] h-[30%] -right-[0] 2xl:-right-[0] top-20 red-gradient__2 blur-[300px] sm:blur-[400px] sm:top-0" />
       {/* gradient end */}
     </div>
   );
