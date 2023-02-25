@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { easeOut, motion as m } from "framer-motion";
 
 const Navbar = () => {
   const [hamburgerActive, setHamburgerActive] = useState(false);
@@ -7,10 +8,22 @@ const Navbar = () => {
 
   const handleClickHamburger = () => {
     setHamburgerActive(!hamburgerActive);
+    const sideNav = document.querySelector(".sideNav");
+
     if (hamburgerActive) {
       document.querySelector(".ham").classList.remove("active");
+      document.querySelectorAll(".line").forEach((line) => {
+        line.classList.remove("active");
+      });
+      sideNav.classList.remove("sidebar");
+      sideNav.classList.add("hidden");
     } else {
       document.querySelector(".ham").classList.add("active");
+      document.querySelectorAll(".line").forEach((line) => {
+        line.classList.add("active");
+      });
+      sideNav.classList.add("sidebar");
+      sideNav.classList.remove("hidden");
     }
   };
 
@@ -19,10 +32,10 @@ const Navbar = () => {
 
     nav.forEach((link) => {
       link.addEventListener("click", function (e) {
-        nav.forEach((link) => {
-          link.classList.remove("active");
-          link.classList.add("navbar-muted");
-          link.classList.remove("muted");
+        nav.forEach((navLink) => {
+          navLink.classList.remove("active");
+          navLink.classList.add("navbar-muted");
+          navLink.classList.remove("muted");
         });
         link.classList.toggle("active");
         link.classList.toggle("navbar-muted");
@@ -44,8 +57,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div
+    <m.div
       className={`${sticky} navbar flex items-center justify-between py-2 px-[1.5rem] sm:px-[2rem] sm:py-5 md:px-[3.5rem] lg:px-[5rem] xl:px-[10rem] 2xl:px-[15rem]`}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
     >
       <Link to="/" className="all-nav flex items-center gap-3 text-white">
         <svg
@@ -81,13 +97,25 @@ const Navbar = () => {
           >
             Services
           </Link>
-          <Link to="/work" className="all-nav navbar-links muted ">
+          <Link
+            to="/work"
+            className="all-nav navbar-links muted"
+            onClick={handleClickNavbar}
+          >
             How We Work
           </Link>
-          <Link to="/projects" className="all-nav navbar-links muted ">
+          <Link
+            to="/projects"
+            className="all-nav navbar-links muted"
+            onClick={handleClickNavbar}
+          >
             Projects
           </Link>
-          <Link to="/about" className="all-nav navbar-links muted ">
+          <Link
+            to="/about"
+            className="all-nav navbar-links muted"
+            onClick={handleClickNavbar}
+          >
             About
           </Link>
         </ul>
@@ -101,7 +129,7 @@ const Navbar = () => {
 
       {/* hamburger menu */}
       <svg
-        className="ham hamRotate ham8 sm:hidden"
+        className="ham hamRotate ham8 sm:hidden z-10"
         viewBox="0 0 100 100"
         width="50"
         onClick={handleClickHamburger}
@@ -116,7 +144,42 @@ const Navbar = () => {
           d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
         />
       </svg>
-    </div>
+
+      {/* sidebar */}
+      <m.div className="sideNav hidden sm:hidden">
+        <ul className="flex flex-col m-auto text-center h-full justify-center gap-20">
+          <Link
+            to="/services"
+            className="all-nav navbar-links muted text-3xl hover:text-white"
+            onClick={handleClickNavbar}
+          >
+            Services
+          </Link>
+          <Link
+            to="/work"
+            className="all-nav navbar-links muted text-3xl hover:text-white"
+            onClick={handleClickNavbar}
+          >
+            How We Work
+          </Link>
+          <Link
+            to="/projects"
+            className="all-nav navbar-links muted text-3xl hover:text-white"
+            onClick={handleClickNavbar}
+          >
+            Projects
+          </Link>
+          <Link
+            to="/about"
+            className="all-nav navbar-links muted text-3xl hover:text-white"
+            onClick={handleClickNavbar}
+          >
+            About
+          </Link>
+        </ul>
+      </m.div>
+      {/* end__sidebar */}
+    </m.div>
   );
 };
 

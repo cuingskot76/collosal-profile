@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="relative">
       {/* about-1 */}
-      <div className="relative mt-10 sm:mt-20 py-2 px-[1rem] sm:px-[2rem] sm:py-5 md:px-[3.5rem] lg:px-[7rem] xl:px-[14rem] 2xl:px-[17rem]">
+      <div className="relative my-20 py-2 px-[1rem] sm:px-[2rem] sm:py-5 md:px-[3.5rem] lg:px-[7rem] xl:px-[14rem] 2xl:px-[17rem]">
         <div className="flex flex-col justify-center items-center lg:grid lg:grid-cols-2 md:gap-5 lg:gap-10 2xl:gap-32 ">
           <div className="mb-28">
             <img

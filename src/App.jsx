@@ -23,32 +23,51 @@ import ProblemWorks from "./components/work/ProblemWorks";
 import PlanningWorks from "./components/work/PlanningWorks";
 import CompleteWorks from "./components/work/CompleteWorks";
 import HeroProject from "./components/project/HeroProjects";
-import MainProject from "./components/project/MainProject";
-import AllProjects from "./components/project/AllProjects";
+
+import { AnimatePresence, motion as m } from "framer-motion";
+
+const animations = {
+  initial: { opacity: 0, x: 100 },
+  animate: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: -100 },
+};
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <div>
+      <AnimatePresence initial={false} mode={"wait"}>
         <Navbar />
-        <Hero />
-        <Features />
-        <Partners />
-        <Work />
-        <Team />
-        <Project />
-        <Testimonials />
-        <Callout />
-        <Footer />
+        <m.div
+          // variants={animations}
+          // initial="initial"
+          // animate="animate"
+          // exit="exit"
+          // transition={{ duration: 1 }}
+          // className=" absolute top-0 left-0 w-full"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          exit={{ opacity: 0 }}
+        >
+          <Hero />
+          <Features />
+          <Partners />
+          <Work />
+          <Team />
+          <Project />
+          <Testimonials />
+          <Callout />
+          <Footer />
+        </m.div>
         {/* <Outlet /> */}
-      </div>
+      </AnimatePresence>
     ),
   },
   {
     path: "/services",
     element: (
-      <div>
+      <AnimatePresence initial={false} mode={"wait"}>
         <Navbar />
         <HeroServices />
         <Design />
@@ -56,7 +75,7 @@ const router = createBrowserRouter([
         <Maintenance />
         <Callout />
         <Footer />
-      </div>
+      </AnimatePresence>
     ),
   },
   {
@@ -90,14 +109,12 @@ const router = createBrowserRouter([
   {
     path: "/projects",
     element: (
-      <div>
+      <AnimatePresence initial={false}>
         <Navbar />
         <HeroProject />
-        {/* <MainProject /> */}
-        {/* <AllProjects /> */}
         <Callout />
         <Footer />
-      </div>
+      </AnimatePresence>
     ),
   },
   {

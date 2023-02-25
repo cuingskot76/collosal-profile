@@ -1,3 +1,4 @@
+import { motion as m } from "framer-motion";
 import React, { useState } from "react";
 import { project } from "../../constant";
 
@@ -5,7 +6,13 @@ const HeroProject = () => {
   const [projects, setProjects] = useState(project);
 
   return (
-    <div className="mt-10 sm:mt-20 py-2 px-[1rem] sm:px-[2rem] sm:py-5 md:px-[3.5rem] lg:px-[7rem] xl:px-[14rem] 2xl:px-[17rem]">
+    <m.div
+      className="my-20 py-2 px-[1rem] sm:px-[2rem] sm:py-5 md:px-[3.5rem] lg:px-[7rem] xl:px-[14rem] 2xl:px-[17rem]"
+      // initial={{ x: "100%" }}
+      // animate={{ x: "0%" }}
+      // transition={{ duration: 0.5, ease: "easeOut" }}
+      // exit={{ opacity: 1 }}
+    >
       <div className="relative max-w-2xl py-2 px-[1rem] m-auto text-center flex flex-col justify-center items-center">
         <span className="border_ pb-24">
           <h3 className="subTitle">PROJECTS</h3>
@@ -92,7 +99,7 @@ const HeroProject = () => {
         {/* gradient end */}
       </div>
       {/* end__all projects */}
-    </div>
+    </m.div>
   );
 };
 
