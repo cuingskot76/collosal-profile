@@ -1,4 +1,9 @@
-import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Outlet,
+  RouterProvider,
+  useLocation,
+} from "react-router-dom";
 import About from "./components/about/About";
 import Footer from "./components/Footer";
 import Callout from "./components/home/Callout";
@@ -25,49 +30,32 @@ import CompleteWorks from "./components/work/CompleteWorks";
 import HeroProject from "./components/project/HeroProjects";
 
 import { AnimatePresence, motion as m } from "framer-motion";
-
-const animations = {
-  initial: { opacity: 0, x: 100 },
-  animate: { opacity: 1, x: 0 },
-  exit: { opacity: 0, x: -100 },
-};
+import React from "react";
+import Transition from "./components/Transition";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <AnimatePresence initial={false} mode={"wait"}>
+      <div>
         <Navbar />
-        <m.div
-          // variants={animations}
-          // initial="initial"
-          // animate="animate"
-          // exit="exit"
-          // transition={{ duration: 1 }}
-          // className=" absolute top-0 left-0 w-full"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          exit={{ opacity: 0 }}
-        >
-          <Hero />
-          <Features />
-          <Partners />
-          <Work />
-          <Team />
-          <Project />
-          <Testimonials />
-          <Callout />
-          <Footer />
-        </m.div>
-        {/* <Outlet /> */}
-      </AnimatePresence>
+        <Hero />
+        <Features />
+        <Partners />
+        <Work />
+        <Team />
+        <Project />
+        <Testimonials />
+        <Callout />
+        <Footer />
+        <Outlet />
+      </div>
     ),
   },
   {
     path: "/services",
     element: (
-      <AnimatePresence initial={false} mode={"wait"}>
+      <div>
         <Navbar />
         <HeroServices />
         <Design />
@@ -75,7 +63,7 @@ const router = createBrowserRouter([
         <Maintenance />
         <Callout />
         <Footer />
-      </AnimatePresence>
+      </div>
     ),
   },
   {
@@ -109,12 +97,12 @@ const router = createBrowserRouter([
   {
     path: "/projects",
     element: (
-      <AnimatePresence initial={false}>
+      <div>
         <Navbar />
         <HeroProject />
         <Callout />
         <Footer />
-      </AnimatePresence>
+      </div>
     ),
   },
   {

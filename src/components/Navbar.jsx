@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { easeOut, motion as m } from "framer-motion";
+import Button from "./Atoms/Button";
 
 const Navbar = () => {
   const [hamburgerActive, setHamburgerActive] = useState(false);
@@ -57,11 +58,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <m.div
+    <div
       className={`${sticky} navbar flex items-center justify-between py-2 px-[1.5rem] sm:px-[2rem] sm:py-5 md:px-[3.5rem] lg:px-[5rem] xl:px-[10rem] 2xl:px-[15rem]`}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
     >
       <Link to="/" className="all-nav flex items-center gap-3 text-white">
         <svg
@@ -88,44 +86,42 @@ const Navbar = () => {
         </svg>
         <h1 className="text-2xl">Collosal.</h1>
       </Link>
-      <div className="hidden sm:block ">
+      <div className="hidden sm:block">
         <ul className="flex gap-3 md:gap-7 lg:gap-12 xl:gap-14">
           <Link
             to="/services"
-            className="all-nav navbar-links muted "
+            className="all-nav navbar-links muted hover:text-white "
             onClick={handleClickNavbar}
           >
             Services
           </Link>
           <Link
             to="/work"
-            className="all-nav navbar-links muted"
+            className="all-nav navbar-links muted hover:text-white"
             onClick={handleClickNavbar}
           >
             How We Work
           </Link>
           <Link
             to="/projects"
-            className="all-nav navbar-links muted"
+            className="all-nav navbar-links muted hover:text-white"
             onClick={handleClickNavbar}
           >
             Projects
           </Link>
           <Link
             to="/about"
-            className="all-nav navbar-links muted"
+            className="all-nav navbar-links muted hover:text-white"
             onClick={handleClickNavbar}
           >
             About
           </Link>
         </ul>
       </div>
-      <Link
-        to="/contact"
-        className="hidden sm:block navbar-links button px-5 py-2 rounded-sm md:px-7 md:py-3 md:rounded-md"
-      >
-        Contact
-      </Link>
+
+      <Button style="hidden sm:block navbar-links md:px-7 md:py-3 md:rounded-md">
+        <Link to="/contact">Contact</Link>
+      </Button>
 
       {/* hamburger menu */}
       <svg
@@ -179,7 +175,7 @@ const Navbar = () => {
         </ul>
       </m.div>
       {/* end__sidebar */}
-    </m.div>
+    </div>
   );
 };
 

@@ -21,10 +21,6 @@ html {
   transition: all 0.5s ease;
 }
 
-.button {
-  background-color: rgba(255, 255, 255, 10%);
-}
-
 .border_ {
   border-bottom: 1px solid rgba(255, 255, 255, 10%);
 }
@@ -33,10 +29,6 @@ html {
 }
 .border__t {
   border-top: 1px solid rgba(255, 255, 255, 10%);
-}
-
-.button-color {
-  background-color: #6016fc;
 }
 
 .subTitle {
@@ -64,7 +56,6 @@ html {
 }
 
 .navbar-scroll {
-  /* background-color: rgba(255, 255, 255, 5%); */
   background-color: rgba(11, 11, 34, 0.5);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255, 255, 255, 10%);
@@ -72,7 +63,6 @@ html {
 
 .navbar-links {
   font-family: "Noto Sans", sans-serif;
-  /* color: rgba(255, 255, 255, 80%); */
 }
 .navbar-muted {
   color: rgba(255, 255, 255, 60%);
